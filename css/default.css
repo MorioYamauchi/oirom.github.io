@@ -1,8 +1,6 @@
 body{
-	position: absolute;
-	width: 1440px;
-	height: 164px;
-	left: 0px;
-	top: 0px;
 	background: #05FF00;
+}
+p{
+	font-size: 100px;
 }
