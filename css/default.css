@@ -1,6 +1,26 @@
 body{
-	background: #05FF00;
+	/* background: #05FF00; */
 }
-p{
+h1{
 	font-size: 100px;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	position: fixed;
+	text-align: center;
+	width: 100%;
+}
+.image{
+	position: absolute;
+	width: 841.34px;
+	height: 612.18px;
+	left: 553px;
+	top: 221px;
+
+	background: #C084EF;
+	border-radius: 166px;
+}
+.background-image{
+	background-image: url("../image/group.svg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
 }
