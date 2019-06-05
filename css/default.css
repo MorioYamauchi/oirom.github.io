@@ -1,17 +1,32 @@
-body {
-  /* background: #05FF00; */
-  position: relative;
+body header {
+  margin: 10% 0 0 0;
 }
 
-body h1 {
-  margin: 0;
-  font-size: 100px;
+body header h1 {
   font-family: 'ZCOOL KuaiLe', cursive;
-  position: absolute;
+  font-size: 100px;
   text-align: center;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
+}
+
+body h2 {
+  font-size: 70px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  margin: 0 0 0 10%;
+  text-align: left;
+}
+
+body .content {
+  background-color: none;
+  padding: 0 0 0 0;
+  margin: 0 10% 0 10%;
+  font-size: 40px;
+  font-family: 'ZCOOL KuaiLe', cursive;
+  display: block;
+  text-align: center;
+}
+
+body .content p {
+  text-align: left;
 }
 
 .background-image {
@@ -20,8 +35,4 @@ body h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-}
-
-div.content {
-  background-color: rgba(255, 255, 255, 0.5);
 }
