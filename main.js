@@ -6,9 +6,11 @@ var app = new Vue({
         color: 'red',
         bg: 'bg-blue',
         counter: 0,
+        title: 'none',
+        description: 'none',
         contentObjects: {
-            title: ['SKILL', 'LINK'],
-            description: ['aaa', 'bbb']
+            titles: ['SKILL', 'LINK'],
+            descriptions: ['aaa', 'bbb']
         }
     },
     computed: {
@@ -26,8 +28,16 @@ var app = new Vue({
         doubleCounterMethod: function() {
             return this.counter *2;
         },
-        changeContent: function(event) {
+        changeContent: function(_arg, $event) {
+            this.counter += 1;
+            if (_arg == 'a') {
+                this.title = this.contentObjects.titles[0];
+                this.description = this.contentObjects.descriptions[0];
+            } else {
+                this.title = this.contentObjects.titles[1];
+                this.description = this.contentObjects.descriptions[1];
+            }
             
-        }
+        },
     }
 });
