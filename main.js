@@ -6,12 +6,18 @@ var app = new Vue({
         color: 'red',
         bg: 'bg-blue',
         counter: 0,
-        title: 'none',
-        description: 'none',
+        title: 'title',
+        content: 'content',
         contentObjects: {
             titles: ['SKILL', 'LINK'],
             descriptions: ['aaa', 'bbb']
-        }
+        },
+        links: [
+            { name : 'Twitter' , url : 'https://twitter.com/cumentarydo' },
+            { name : 'GitHub' , url : 'https://github.com/oirom' },
+            { name : 'AtCoder', url : 'https://atcoder.jp/users/oirom0528' }
+        ],
+        now: "00:00:00"
     },
     computed: {
         classObject: function() {
@@ -29,15 +35,17 @@ var app = new Vue({
             return this.counter *2;
         },
         changeContent: function(_arg, $event) {
-            this.counter += 1;
             if (_arg == 'a') {
                 this.title = this.contentObjects.titles[0];
-                this.description = this.contentObjects.descriptions[0];
-            } else {
+                this.content = this.contentObjects.descriptions[0];
+            } else if (_arg=='b') {
                 this.title = this.contentObjects.titles[1];
-                this.description = this.contentObjects.descriptions[1];
+                this.content = this.contentObjects.descriptions[1];
             }
-            
         },
+        getTime: function() {
+            var date = new Date();
+            this.now = date.getHours() + ":" + date.getMinutes() + ":" + date.getSeconds();
+        }
     }
 });
