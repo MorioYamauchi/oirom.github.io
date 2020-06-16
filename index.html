@@ -15,41 +15,21 @@
     </style>
 </head>
 <body>
+
     <div id="app">
-        <h1 v-bind:class="classObject">{{message}}</h1>
+        <h1>oirom</h1>
+        <button @click="changeContent('skill')">SKILL</button>
+        <button @click="changeContent('link')">LINK</button>
+        <h2> {{ contentObjects.title[0] }} </h2>
+        <p> {{ contentObjects.description[0] }} </p>
+
+        <h2 v-bind:class="classObject">{{message}}</h2>
         <button @click="isActive = !isActive">SWITCH</button>
 
         <h1 v-bind:class="[{red: isActive}, bg]">{{message}}</h1>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-    <script>
-    var app = new Vue({
-        el: "#app",
-        data: {
-            message: 'こんにちわ',
-            isActive: true,
-            color: 'red',
-            bg: 'bg-blue',
-            counter: 0,
-        },
-        computed: {
-            classObject: function() {
-                return { 
-                    red: this.isActive,
-                    'bg-blue': !this.isActive
-                }
-            }
-        },
-        methods: {
-            countUp: function() {
-                this.counter += 1;
-            },
-            doubleCounterMethod: function() {
-                return this.counter *2;
-            }
-        }
-    });
-    </script>
+    <script src="./main.js"></script>
 </body>
 </html>
