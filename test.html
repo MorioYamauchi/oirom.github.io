@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>oirom</title>
+</head>
+<body>
+
+    <div id="app">
+    <div class="GB_Body">
+        <div class="LeftSide">
+            <div class="ButtonX"></div>
+        </div>
+        <div class="Display_Mat">
+            <div class="Display">
+                <p>Welcome!!</p>
+                <p>Please push buttons to travel my portfolio!!</p>
+                <p> {{ counter }} </p>
+            </div>
+        </div>
+        <div class="RightSide">
+            <div class="ButtonA" @click="countUp"></div>
+            <div class="ButtonB"></div>
+        </div>
+    </div>
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html>

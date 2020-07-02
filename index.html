@@ -3,46 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YamauchiMorio</title>
-
-    <style>
-    .red {
-        color: red;
-    }
-    .bg-blue {
-        background-color: rgb(0, 136, 255);
-    }
-    </style>
+    <link rel="stylesheet" href="default.css">
+    <title>oirom</title>
 </head>
 <body>
-
     <div id="app">
-        <h1>oirom</h1>
-        <button @click="changeContent('a')">SKILL</button>
-        <button @click="changeContent('b')">LINK</button>
-        <h2> {{ title }} </h2>
-        <p> {{ content }} </p>
+        <div class="header">
+            <div class="header-logo">oirom</div>
+            <div class="header-list">
+                <ul>
+                    <li>自己紹介</li>
+                    <li>スキル</li>
+                    <li>リンク</li>
+                </ul>
+            </div>
+        </div>
 
-        <h2 v-bind:class="classObject">{{message}}</h2>
-        <button @click="isActive = !isActive">CHANGE COLOR</button>
-        <p>↑このボタンを押すと『こんにちわ』の色が変わります</p>
+        <div class="main">
+            <div class="copy-container">
+                <h1>HELLO WORLD<span>.</span></h1>
+                <h2>プログラミングの世界へようこそ</h2>
+            </div>
+            <button @click="changeContent('a')">SKILL</button>
+            <button @click="changeContent('b')">LINK</button>
+            <h2> {{ title }} </h2>
+            <p> {{ content }} </p>
 
-        <p> 数字 : {{ counter }} </p>
-        <button @click="countUp">COUNT UP</button>
-        <p>↑このボタンを押すと数字が一つ増えます</p>
+            <h2 v-bind:class="classObject">{{message}}</h2>
+            <button @click="isActive = !isActive">CHANGE COLOR</button>
+            <p>↑このボタンを押すと『こんにちわ』の色が変わります</p>
 
-        <p> 時刻 : {{ now }} </p>
-        <button @click="getTime">DISPLAY CURRENT TIME</button>
-        <p>↑このボタンを押すと現在時刻が表示されます</p>
+            <p> 数字 : {{ counter }} </p>
+            <button @click="countUp">COUNT UP</button>
+            <p>↑このボタンを押すと数字が一つ増えます</p>
 
-        <ul>
-            <li v-for="link in links">
-                <a :href="link.url"> {{ link.name }} </a>
-            </li>
-        </ul>
+            <p> 時刻 : {{ now }} </p>
+            <button @click="getTime">DISPLAY CURRENT TIME</button>
+            <p>↑このボタンを押すと現在時刻が表示されます</p>
+        </div>
+
+        <div class="footer">
+            <div class="footer-list">
+                <ul>
+                    <li v-for="link in links">
+                        <a :href="link.url"> {{ link.name }} </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./main.js"></script>
+
 </body>
 </html>

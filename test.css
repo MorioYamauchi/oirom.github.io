@@ -1,0 +1,80 @@
+.GB_Body {
+    width: 100%;
+    height: 70vh;
+    
+    background-image: url("./GB_Parts/Body2.png");
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center;
+}
+
+.Display_Mat {
+    width: 40%;
+    height: 70vh;
+    margin: 0 auto;
+    float: left;
+    background-image: url("./GB_Parts/DisplayMat.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Display {
+    width: 85%;
+    height: 34%;
+    margin: 50% auto;
+    text-align: center;
+    background-image: url("./GB_Parts/Display.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.LeftSide {
+    width: 30%;
+    height: 70vh;
+    margin: 0 auto;
+    float: left;
+}
+
+.RightSide {
+    width: 30%;
+    height: 70vh;
+    margin: 0 auto;
+    float: left;
+}
+
+.ButtonX {
+    width: 35%;
+    height: 17%;
+    float: left;
+    margin-top: 85%;
+    margin-left: 55%;
+    background-image: url("./GB_Parts/ButtonX.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.ButtonA {
+    width: 20%;
+    height: 10%;
+    float: left;
+    margin-top: 95%;
+    margin-left: 8%;
+    background-image: url("./GB_Parts/ButtonA.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonB {
+    width: 20%;
+    height: 10%;
+    float: left;
+    margin-top: 85%;
+    margin-left: 5%;
+    background-image: url("./GB_Parts/ButtonB.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
