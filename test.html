@@ -23,16 +23,18 @@
                 <div class="Center">
                     <div class="Display_Mat">
                         <div class="Display">
+                            <span> {{ counter }} </span>
                         </div>
                     </div>
                 </div>
                 
                 <div class="RightSide">
                     <div class="LED"></div>
-                    <div class="ButtonA"></div>
-                    <div class="ButtonB"></div>
+                    <div class="ButtonA" @click="countUp"></div>
+                    <div class="ButtonB" @click="countUp"></div>
                     <div class="Speaker"></div>
                 </div>
+
             </div>
         </div>
     </div>
