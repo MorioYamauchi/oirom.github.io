@@ -12,10 +12,11 @@ var app = new Vue({
             titles: ['SKILL', 'LINK'],
             descriptions: ['aaa', 'bbb']
         },
-        links: [
-            { name : 'Twitter' , url : 'https://twitter.com/cumentarydo' },
-            { name : 'GitHub' , url : 'https://github.com/oirom' },
-            { name : 'AtCoder', url : 'https://atcoder.jp/users/oirom0528' }
+        studies: [
+            { name : 'HTML' },
+            { name : 'CSS' },
+            { name : 'Vue.js' }
+            { name : 'OperatingSystem' }
         ],
         now: "00:00:00"
     },

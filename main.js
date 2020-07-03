@@ -13,9 +13,11 @@ var app = new Vue({
             descriptions: ['aaa', 'bbb']
         },
         links: [
-            { name : 'Twitter' , url : 'https://twitter.com/cumentarydo' },
-            { name : 'GitHub' , url : 'https://github.com/oirom' },
-            { name : 'AtCoder', url : 'https://atcoder.jp/users/oirom0528' }
+            { name : 'HTML' },
+            { name : 'CSS' },
+            { name : 'Vue.js' },
+            { name : 'Operating System' },
+            { name : 'C Compiler' }
         ],
         now: "00:00:00"
     },
