@@ -20,14 +20,27 @@
     }
 
     .Center {
+        position: relative;
         width: 417px;
         height: 432px;
         float: left;
     }
+
+    .LOGO_Cumpany {
+        position: relative;
+        top: 14px;
+        width: 108px;
+        height: 27px;
+        margin: 0 auto;
+        background-image: url("./GB_Parts/LOGO_cumpany.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
     
     .Display_Mat {
         position: relative;
-        top: 50px;
+        top: 25px;
         width: 417px;
         height: 340px;
         margin: 0 auto;
@@ -47,6 +60,11 @@
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
+
+        padding-top: 10px;
+        text-align: center;
+        font-family: 'MuseoModerno', cursive;
+        font-size: 18px;
     }
     
     .LeftSide {
