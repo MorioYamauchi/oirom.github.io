@@ -4,54 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@800&display=swap" rel="stylesheet">
     <title>oirom</title>
 </head>
 <body>
+    <div class="header">
+
+    </div>
+
     <div id="app">
-        <div class="header">
-            <div class="header-logo">oirom</div>
-            <div class="header-list">
-                <ul>
-                    <li>自己紹介</li>
-                    <li>スキル</li>
-                    <li>リンク</li>
-                </ul>
-            </div>
-        </div>
+        <div class="GameBoy">
+            <div class="GB_Body">
 
-        <div class="main">
-            <div class="copy-container">
-                <h1>HELLO WORLD<span>.</span></h1>
-                <h2>プログラミングの世界へようこそ</h2>
-            </div>
-            <button @click="changeContent('a')">SKILL</button>
-            <button @click="changeContent('b')">LINK</button>
-            <h2> {{ title }} </h2>
-            <p> {{ content }} </p>
+                <div class="LeftSide">
+                    <div class="ButtonL"></div>
+                    <div class="ButtonX"></div>
+                    <div class="ButtonCMat"></div>
+                    <div class="ButtonDMat"></div>                    
+                    <div class="ButtonC"></div>
+                    <div class="ButtonD"></div>
+                </div>
 
-            <h2 v-bind:class="classObject">{{message}}</h2>
-            <button @click="isActive = !isActive">CHANGE COLOR</button>
-            <p>↑このボタンを押すと『こんにちわ』の色が変わります</p>
+                <div class="Center">
+                    <div class="LOGO_Cumpany"></div>
+                    <div class="Display_Mat">
+                        <div class="Display">
+                            <div class="Contents">
+                                <p><span class="highlight">▶</span>Push buttons to travel my webpage!!</p>
+                                <p>Now I am studying topics below :</p>
+                                <p>html, css, javascript(Vue.js), OS, C compiler</p>
+                                <p> {{ counter }} </p>
+                                <a href="https://twitter.com/oirom0528"><img src="GB_Parts/twitter.png"></a>
+                                <a href="https://github.com/oirom"><img src="GB_Parts/github.png"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="RightSide">
+                    <div class="ButtonR"></div>
+                    <div class="LED"></div>
+                    <div class="ButtonA" @click="countUp"></div>
+                    <div class="ButtonB" @click="countUp"></div>
+                    <div class="Speaker"></div>
+                </div>
 
-            <p> 数字 : {{ counter }} </p>
-            <button @click="countUp">COUNT UP</button>
-            <p>↑このボタンを押すと数字が一つ増えます</p>
-
-            <p> 時刻 : {{ now }} </p>
-            <button @click="getTime">DISPLAY CURRENT TIME</button>
-            <p>↑このボタンを押すと現在時刻が表示されます</p>
-        </div>
-
-        <div class="footer">
-            <div class="footer-list">
-                <ul>
-                    <li v-for="link in links">
-                        <a :href="link.url"> {{ link.name }} </a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
+
+
+    
 
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <script src="./main.js"></script>
