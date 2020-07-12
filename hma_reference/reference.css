@@ -6,9 +6,8 @@
     left: 0px;
     width: 250px;
     height: 100vh;
-    float: left;
     background-color: gray;
-
+    overflow-y: auto;
 }
 
 .nav-side-search {
@@ -37,10 +36,12 @@
 }
 
 .main-content {
+    position: absolute;
+    top: 10px;
+    left: 260px;
+    width: calc( 100% - 260px );
     max-width: 800px;
-    height: 100vh;
-    margin-left: 255px;
-    float: left;
+    height: 1000px;
     background-color: burlywood;
 }
 
