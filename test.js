@@ -15,7 +15,7 @@ var app = new Vue({
         studies: [
             { name : 'HTML' },
             { name : 'CSS' },
-            { name : 'Vue.js' }
+            { name : 'Vue.js' },
             { name : 'OperatingSystem' }
         ],
         now: "00:00:00"

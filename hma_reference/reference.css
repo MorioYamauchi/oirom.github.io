@@ -1,0 +1,47 @@
+@media screen and (min-width: 600px) {
+    
+.nav-side {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100vh;
+    float: left;
+    background-color: gray;
+
+}
+
+.nav-side-search {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 250px;
+    height: 100px;
+    padding-top: 25px;
+    font-size:10px;
+    text-align: center;
+    background-color: rgb(44, 192, 255);
+}
+
+.nav-side-menu {
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 250px;
+    background-color: darkslategray;
+}
+
+.nav-side-menu ol {
+    font-size: 15px;
+    color: rgb(230, 230, 230);
+}
+
+.main-content {
+    max-width: 800px;
+    height: 100vh;
+    margin-left: 255px;
+    float: left;
+    background-color: burlywood;
+}
+
+}

@@ -1,18 +1,15 @@
 @media screen and (min-width: 100px) {
-
-    .header {
-        
-    }
-
+    
     .GameBoy {
         position: absolute;
-        top: 50px;
+        top: 150px;
         right: 0;
         left: 0;
         width: 800px;
         height: 432px;
         margin: 0 auto;
     }
+
     .GB_Body {
         position: relative;
         width: 800px;
