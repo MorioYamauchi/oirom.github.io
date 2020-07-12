@@ -58,14 +58,20 @@
         </nav>
 
         <div class="main-content">
-            {{  }}
+            <chapter-item
+                v-for="section in chapter[chapter_num]"
+                v-bind:section="section"
+                v-bind:key="section.id"
+            ></chapter-item>
         </div>
 
     </div>
 
 
-    <!--script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script-->
-    <script src="./vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!--script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
+    <script src="./vue-router.js"></script>
+    <script src="./vue.js"></script-->
     <script src="./main.js"></script>
 
 </body>
