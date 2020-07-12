@@ -1,6 +1,11 @@
 Vue.component('chapter-item', {
     props: ['section'],
-    template: '<h2>{{ section.title }}</h2>'
+    template: `
+        <div>
+            <h2>{{ section.title }}</h2>
+            <div v-html="section.content"></div>
+        </div>
+    `
 })
 
 new Vue({
@@ -12,18 +17,22 @@ new Vue({
         isActive4: false,
         isActive5: false,
         isActive6: false,
-        chapter_num: 2,
+        chapter_num: 0,
         chapter: [
             [
 
             ],
             [
-                { id: 0, title: '本マニュアルについて' },
-                { id: 1, title: '本マニュアルの構成' }
+                { id: 0, title: '本マニュアルについて', content: 'ここは本マニュアルのについて書かれる予定'},
+                { id: 1, title: '本マニュアルの構成', content: 'ここ本マニュアルの構成について書かれる予定'}
             ],
             [
                 { id: 0, title: '実機で開発する' },
                 { id: 1, title: 'シミュレータで開発する' }
+            ],
+            [
+                { id: 0, title: '〇〇〇の概要' },
+                { id: 1, title: '〇〇〇の特徴' }
             ]
         ]
     },
@@ -37,7 +46,10 @@ new Vue({
                 this.isActive2 = !this.isActive2
                 this.chapter_num = 2
             }
-            if (_arg == '3') this.isActive3 = !this.isActive3
+            if (_arg == '3') {
+                this.isActive3 = !this.isActive3
+                this.chapter_num = 3
+            }
             if (_arg == '4') this.isActive4 = !this.isActive4
             if (_arg == '5') this.isActive5 = !this.isActive5
             if (_arg == '6') this.isActive6 = !this.isActive6

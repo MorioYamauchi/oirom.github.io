@@ -60,8 +60,9 @@
         <div class="main-content">
             <chapter-item
                 v-for="section in chapter[chapter_num]"
-                v-bind:section="section"
                 v-bind:key="section.id"
+                v-bind:section="section"
+                v-bind:content="section.content"
             ></chapter-item>
         </div>
 
