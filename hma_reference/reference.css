@@ -1,5 +1,8 @@
 @media screen and (min-width: 600px) {
-    
+body {
+    font-family: "Lato","proxima-nova","Helvetica Neue",Arial,sans-serif;
+}
+
 .nav-side {
     position: fixed;
     top: 0px;
