@@ -1,19 +1,264 @@
-@media screen and (min-width: 100px) {
+.GameBoy {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    left: 0;
+    width: 800px;
+    height: 432px;
+    margin: 0 auto;
+}
+
+.GB_Body {
+    position: relative;
+    width: 800px;
+    height: 432px;
+    background-image: url("./GB_Parts/Body3.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Center {
+    position: relative;
+    width: 417px;
+    height: 432px;
+    float: left;
+}
+
+.LOGO_Cumpany {
+    position: absolute;
+    top: 14px;
+    left: 155.5px;
+    width: 108px;
+    height: 27px;
+    background-image: url("./GB_Parts/LOGO_cumpany.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Display_Mat {
+    position: absolute;
+    top: 55px;
+    width: 417px;
+    height: 340px;
+    background-image: url("./GB_Parts/DisplayMat.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Display {
+    position: absolute;
+    top: 30px;
+    left: 34.5px;
+    width: 348px;
+    height: 223px;
+    margin: 0 auto;
+    background-image: url("./GB_Parts/Display.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    
+    
+    font-family: 'MuseoModerno', cursive;
+    font-size: 16px;
+    color: #5B5252;
+}
+
+.Contents {
+    position: relative;
+    top: 1px;
+    width: 340px;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.highlight {
+    animation: flashing 1.0s ease-out;
+    animation-iteration-count: infinite;
+}
+
+.Display img {
+    width: 25px;
+    height: 25px;
+}
+
+@keyframes flashing {
+    0%   { opacity: 0.5; }
+    50%  { opacity: 1;}
+    100% { opacity: 0.5; }
+}
+
+.Display li {
+    list-style: none;
+}
+
+.LeftSide {
+    position: relative;
+    width: 191.5px;
+    height: 432px;
+    float: left;
+}
+
+.ButtonL {
+    position: relative;
+    top: 8px;
+    left: 20px;
+    width: 152px;
+    height: 61px;
+    background-image: url("./GB_Parts/ButtonL.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonX {
+    position: relative;
+    top: 60px;
+    left: 50px;
+    width: 106px;
+    height: 106px;
+    background-image: url("./GB_Parts/ButtonX.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonC {
+    position: absolute;
+    top: 270px;
+    left: 140px;
+    width: 31px;
+    height: 31px;
+    background-image: url("./GB_Parts/ButtonC.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonD {
+    position: absolute;
+    top: 316px;
+    left: 140px;
+    width: 31px;
+    height: 31px;
+    background-image: url("./GB_Parts/ButtonD.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonCMat {
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 128px;
+    height: 58px;
+    background-image: url("./GB_Parts/ButtonCMat.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonDMat {
+    position: absolute;
+    top: 295px;
+    left: 50px;
+    width: 128px;
+    height: 58px;
+    background-image: url("./GB_Parts/ButtonDMat.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.RightSide {
+    position: relative;
+    width: 191.5px;
+    height: 432px;
+    float: left;
+}
+
+.ButtonR {
+    position: relative;
+    top: 8px;
+    left: 20px;
+    width: 152px;
+    height: 61px;
+    background-image: url("./GB_Parts/ButtonR.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.LED {
+    position: absolute;
+    top: 60px;
+    left: 40px;
+    width: 19px;
+    height: 19px;
+    background-image: url("./GB_Parts/LED_Green.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonA {
+    position: absolute;
+    top: 140px;
+    left: 20px;
+    width: 58px;
+    height: 58px;
+    background-image: url("./GB_Parts/ButtonA.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.ButtonB {
+    position: relative;
+    top: 50px;
+    left: 90px;
+    width: 58px;
+    height: 58px;
+    background-image: url("./GB_Parts/ButtonB.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+.Speaker {
+    position: relative;
+    top: 110px;
+    left: 10px;
+    width: 122px;
+    height: 86px;
+    background-image: url("./GB_Parts/Speaker.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+
+
+@media screen and (max-width: 420px) {
     
     .GameBoy {
         position: absolute;
-        top: 150px;
+        top: 50px;
         right: 0;
         left: 0;
-        width: 800px;
-        height: 432px;
+        width: 267px;
+        height: 144px;
         margin: 0 auto;
     }
 
     .GB_Body {
         position: relative;
-        width: 800px;
-        height: 432px;
+        width: 267px;
+        height: 144px;
         background-image: url("./GB_Parts/Body3.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -22,17 +267,17 @@
 
     .Center {
         position: relative;
-        width: 417px;
-        height: 432px;
+        width: 139px;
+        height: 144px;
         float: left;
     }
 
     .LOGO_Cumpany {
         position: absolute;
         top: 14px;
-        left: 155.5px;
-        width: 108px;
-        height: 27px;
+        left: 51.8px;
+        width: 36px;
+        height: 9px;
         background-image: url("./GB_Parts/LOGO_cumpany.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -41,9 +286,9 @@
     
     .Display_Mat {
         position: absolute;
-        top: 55px;
-        width: 417px;
-        height: 340px;
+        top: 18.3px;
+        width: 139px;
+        height: 113px;
         background-image: url("./GB_Parts/DisplayMat.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -52,10 +297,10 @@
     
     .Display {
         position: absolute;
-        top: 30px;
-        left: 34.5px;
-        width: 348px;
-        height: 223px;
+        top: 10px;
+        left: 11.5px;
+        width: 116px;
+        height: 74.3px;
         margin: 0 auto;
         background-image: url("./GB_Parts/Display.png");
         background-repeat: no-repeat;
@@ -65,15 +310,15 @@
         
         
         font-family: 'MuseoModerno', cursive;
-        font-size: 16px;
+        font-size: 6px;
         color: #5B5252;
     }
 
     .Contents {
         position: relative;
         top: 1px;
-        width: 340px;
-        height: 220px;
+        width: 113px;
+        height: 73px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -84,8 +329,8 @@
     }
 
     .Display img {
-        width: 25px;
-        height: 25px;
+        width: 8px;
+        height: 8px;
     }
 
     @keyframes flashing {
@@ -100,17 +345,17 @@
 
     .LeftSide {
         position: relative;
-        width: 191.5px;
-        height: 432px;
+        width: 64px;
+        height: 144px;
         float: left;
     }
 
     .ButtonL {
         position: relative;
-        top: 8px;
-        left: 20px;
-        width: 152px;
-        height: 61px;
+        top: 3px;
+        left: 7px;
+        width: 51px;
+        height: 20px;
         background-image: url("./GB_Parts/ButtonL.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -119,10 +364,10 @@
     
     .ButtonX {
         position: relative;
-        top: 60px;
-        left: 50px;
-        width: 106px;
-        height: 106px;
+        top: 20px;
+        left: 18px;
+        width: 35px;
+        height: 35px;
         background-image: url("./GB_Parts/ButtonX.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -131,10 +376,10 @@
     
     .ButtonC {
         position: absolute;
-        top: 270px;
-        left: 140px;
-        width: 31px;
-        height: 31px;
+        top: 90px;
+        left: 47px;
+        width: 10px;
+        height: 10px;
         background-image: url("./GB_Parts/ButtonC.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -143,10 +388,10 @@
     
     .ButtonD {
         position: absolute;
-        top: 316px;
-        left: 140px;
-        width: 31px;
-        height: 31px;
+        top: 105px;
+        left: 47px;
+        width: 10px;
+        height: 10px;
         background-image: url("./GB_Parts/ButtonD.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -155,10 +400,10 @@
     
     .ButtonCMat {
         position: absolute;
-        top: 250px;
-        left: 50px;
-        width: 128px;
-        height: 58px;
+        top: 83px;
+        left: 17px;
+        width: 42px;
+        height: 19px;
         background-image: url("./GB_Parts/ButtonCMat.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -167,10 +412,10 @@
     
     .ButtonDMat {
         position: absolute;
-        top: 295px;
-        left: 50px;
-        width: 128px;
-        height: 58px;
+        top: 98px;
+        left: 17px;
+        width: 43px;
+        height: 19px;
         background-image: url("./GB_Parts/ButtonDMat.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -179,17 +424,17 @@
     
     .RightSide {
         position: relative;
-        width: 191.5px;
-        height: 432px;
+        width: 64px;
+        height: 144px;
         float: left;
     }
 
     .ButtonR {
         position: relative;
-        top: 8px;
-        left: 20px;
-        width: 152px;
-        height: 61px;
+        top: 3px;
+        left: 7px;
+        width: 51px;
+        height: 20px;
         background-image: url("./GB_Parts/ButtonR.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -198,10 +443,10 @@
     
     .LED {
         position: absolute;
-        top: 60px;
-        left: 40px;
-        width: 19px;
-        height: 19px;
+        top: 20px;
+        left: 13px;
+        width: 6px;
+        height: 6px;
         background-image: url("./GB_Parts/LED_Green.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -210,10 +455,10 @@
     
     .ButtonA {
         position: absolute;
-        top: 140px;
-        left: 20px;
-        width: 58px;
-        height: 58px;
+        top: 47px;
+        left: 6.7px;
+        width: 19px;
+        height: 19px;
         background-image: url("./GB_Parts/ButtonA.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -222,10 +467,10 @@
     
     .ButtonB {
         position: relative;
-        top: 50px;
-        left: 90px;
-        width: 58px;
-        height: 58px;
+        top: 16.7px;
+        left: 30px;
+        width: 19px;
+        height: 19px;
         background-image: url("./GB_Parts/ButtonB.png");
         background-repeat: no-repeat;
         background-size: 100%;
@@ -234,10 +479,10 @@
     
     .Speaker {
         position: relative;
-        top: 110px;
-        left: 10px;
-        width: 122px;
-        height: 86px;
+        top: 19px;
+        left: 3px;
+        width: 41px;
+        height: 29px;
         background-image: url("./GB_Parts/Speaker.png");
         background-repeat: no-repeat;
         background-size: 100%;
