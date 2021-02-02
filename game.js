@@ -3,7 +3,7 @@ var ctx = cvs.getContext("2d");
 
 var bird = new Image();
 var bX = 10;
-var bY = 100;
+var bY = 145;
 var bg = new Image();
 var pN = new Image();
 var pS = new Image();
@@ -14,15 +14,22 @@ pipe[0] = {
     y : 0
 };
 
-bird.src = "bird.png";
-bg.src = "background.png";
-pN.src = "pipeNorth.png";
-pS.src = "pipeSouth.png";
+bird.src = "./image/bird.png";
+bg.src = "./image/background.png";
+pN.src = "./image/pipeNorth.png";
+pS.src = "./image/pipeSouth.png";
 
+var bY_prev = bY;
+var F = 1;
+var V = 0;
+var A = 1;
+var canJump = true;
 document.addEventListener("keydown", moveUp);
 function moveUp(e){
-    bY -= 20;
-    console.log('bY:' + bY);
+    if(canJump){
+        V = -12;
+        canJump = false;
+    }
 }
 
 function draw(){
@@ -45,7 +52,17 @@ function draw(){
             })
         }
     }
-    bY += 1;
+
+    if(bY<=145&&!canJump){
+        V += A;
+        bY += V;
+    }
+
+    if(bY>145){
+        bY = 145;
+        V = 0;
+        canJump = true;
+    }
 
     requestAnimationFrame(draw);
 }
