@@ -22,12 +22,12 @@ pS.src = "./image/pipeSouth.png";
 var bY_prev = bY;
 var F = 1;
 var V = 0;
-var A = 1;
+var A = 0.3;
 var canJump = true;
 document.addEventListener("keydown", moveUp);
 function moveUp(e){
     if(canJump){
-        V = -12;
+        V = -8;
         canJump = false;
     }
 }
@@ -39,11 +39,16 @@ function draw(){
     //ctx.drawImage(pS,300,150);
 
     for(var i=0; i<pipe.length; i++){
-        //console.log('pipe.length:' + pipe.length);
         ctx.drawImage(pN, pipe[i].x, pipe[i].y);
         ctx.drawImage(pS, pipe[i].x, pipe[i].y+pN.height+90);
         pipe[i].x--;
-        //console.log('pipe[i].x:' + pipe[i].x);
+        
+        if(bX + bird.width == pipe[i].x && bY + bird.height >= pipe[i].y + pN.height + 90){
+            alert("Hit!!");
+            //console.log("Hit");
+            //console.log(bX + bird.width, pipe[i].x);
+            //console.log(bY + bird.height, pipe[i].y+pN.height+90);
+        }
 
         if(pipe[i].x == 100){
             pipe.push({
